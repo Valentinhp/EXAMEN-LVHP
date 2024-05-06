@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo de Apps para la Nube</title>
+  <!-- Agrega el favicon -->
+  <link rel="icon" type="image/png" href="/IMGENES/LOGO.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Personalización adicional */
+    .navbar-brand {
+      color: #007bff;
+      font-size: 28px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+    .nav-link {
+      color: #07386d;
+      font-weight: bold;
+      font-size: 20px; /* Tamaño de fuente reducido */
+      text-decoration: none; /* Quita el subrayado de enlaces */
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #0056b3;
+    }
+    .titulo {
+      color: #0e3b6a;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .logo-container {
+      margin-left: auto;
+    }
+    .logo {
+      max-width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+      transition: all 0.3s ease;
+    }
+    .logo:hover {
+      transform: rotate(360deg);
+    }
+    h2, h3 {
+      color: #07386d;
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    ul {
+      font-size: 18px;
+    }
+    table {
+      margin-top: 20px;
+    }
+    th {
+      color: #0e3b6a;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    td {
+      font-size: 18px;
+    }
+    .embed-responsive {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">EXAMEN PARCIAL II</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="titulo" href="/APPS NUBE.HTML">DESARROLLO DE APPS PARA LA NUBE</a>
+            </li>
+            <!-- Resto de los elementos de la barra de navegación -->
+          </ul>
+          <!-- Contenedor del logo -->
+          <div class="logo-container">
+            <img src="/IMGENES/LOGO.png" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Desarrollo de Apps para la Nube</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h2>¿Qué es el desarrollo de apps para la nube?</h2>
+        <p>El desarrollo de aplicaciones para la nube implica la creación de software que se ejecuta en servidores remotos y se entrega a través de Internet. Esto permite a los usuarios acceder a las aplicaciones utilizando un navegador web o una aplicación móvil, en lugar de instalar y ejecutar la aplicación localmente en sus dispositivos.</p>
+        <p>Algunas de las ventajas del desarrollo de apps para la nube incluyen:</p>
+        <ul>
+          <li>Escalabilidad: Las aplicaciones en la nube pueden escalar fácilmente para manejar un gran número de usuarios y cargas de trabajo.</li>
+          <li>Accesibilidad desde cualquier lugar: Los usuarios pueden acceder a las aplicaciones desde cualquier dispositivo con conexión a Internet, lo que facilita el trabajo remoto y la colaboración.</li>
+          <li>Menores costos de infraestructura: Al utilizar servicios en la nube, las empresas pueden reducir los costos asociados con la compra, mantenimiento y actualización de hardware y software.</li>
+          <li>Actualizaciones automáticas: Las actualizaciones de software se implementan automáticamente en la nube, lo que garantiza que los usuarios siempre tengan acceso a la última versión de la aplicación.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <img src="/IMGENES/NUBE2.png" class="img-fluid" alt="Desarrollo de apps para la nube">
+      </div>
+    </div>
+  
+    <!-- Más contenido sobre desarrollo de apps para la nube -->
+    <div class="row mt-5">
+      <div class="col">
+        <h2>Herramientas y tecnologías para el desarrollo de apps en la nube</h2>
+        <p>Para desarrollar aplicaciones para la nube, los desarrolladores utilizan una variedad de herramientas y tecnologías, incluyendo:</p>
+        <ul>
+          <li>Frameworks de desarrollo web como React.js, Angular, o Vue.js para construir interfaces de usuario interactivas y receptivas.</li>
+          <li>Servicios de alojamiento en la nube como Amazon Web Services (AWS), Microsoft Azure o Google Cloud Platform para implementar y escalar aplicaciones.</li>
+          <li>Bases de datos en la nube como Amazon DynamoDB, Google Cloud SQL o Azure Cosmos DB para almacenar y gestionar datos de manera eficiente.</li>
+          <li>Contenedores y orquestadores como Docker y Kubernetes para empaquetar, distribuir y gestionar aplicaciones en entornos de nube distribuidos.</li>
+          <li>APIs y servicios en la nube para agregar funcionalidades avanzadas como autenticación de usuarios, procesamiento de pagos, y análisis de datos.</li>
+        </ul>
+        <p>Al aprovechar estas herramientas y tecnologías, los desarrolladores pueden crear aplicaciones modernas y escalables que aprovechan todo el potencial de la computación en la nube.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col-md-6">
+      <h2>Frameworks populares para el desarrollo de apps para la nube</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Framework</th>
+            <th>Descripción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AWS Amplify</td>
+            <td>Una plataforma de desarrollo completa para aplicaciones web y móviles, que permite agregar funcionalidades de backend sin necesidad de configurar servidores.</td>
+          </tr>
+          <tr>
+            <td>Microsoft Azure</td>
+            <td>Una amplia gama de servicios en la nube, incluyendo almacenamiento, bases de datos, inteligencia artificial y más, que facilita el desarrollo y despliegue de aplicaciones en la nube.</td>
+          </tr>
+          <tr>
+            <td>Google Cloud Platform</td>
+            <td>Ofrece servicios de infraestructura, almacenamiento, bases de datos, machine learning y más, para ayudar a las empresas a escalar y crecer.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/C49IFsQN-H4?si=UpCcU4ZLOewHhMby" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-5">
+    <div class="col">
+      <h2 class="text-center">Ejemplos de aplicaciones populares en la nube</h2>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="max-width: 400px; margin: 0 auto;">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/IMGENES/APPNUBE1.webp" class="d-block mx-auto img-fluid" alt="Aplicación 1">
+          </div>
+          <div class="carousel-item">
+            <img src="/IMGENES/APPNUBE2.webp" class="d-block mx-auto img-fluid" alt="Aplicación 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/IMGENES/APPNUBE3.jpg" class="d-block mx-auto img-fluid" alt="Aplicación 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS y scripts personalizados -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

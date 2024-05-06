@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Parcial</title>
+  <!-- Agrega el favicon -->
+  <link rel="icon" type="image/png" href="/IMGENES/LOGO.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Personalización adicional */
+    .navbar-brand {
+      color: #007bff;
+      font-size: 24px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+    .nav-link {
+      color: #07386d;
+      font-weight: bold;
+      font-size: 18px; /* Tamaño de fuente reducido */
+      text-decoration: none; /* Quita el subrayado de enlaces */
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #0056b3;
+    }
+    .titulo {
+      color: #0e3b6a;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .logo-container {
+      margin-left: auto;
+    }
+    .logo {
+      max-width: 40px; /* Ajusta el tamaño del logo según sea necesario */
+      transition: all 0.3s ease;
+    }
+    .logo:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">EXAMEN PARCIAL II</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="titulo" href="/MICROSERVICIOS.HTML">MICROSERVICIOS</a>
+            </li>
+            <!-- Resto de los elementos de la barra de navegación -->
+          </ul>
+          <!-- Contenedor del logo -->
+          <div class="logo-container">
+            <img src="/IMGENES/LOGO.png" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Contenedor del video de YouTube -->
+<div class="container mt-4 text-center">
+    <h2>¿Qué son los Microservicios?</h2>
+    <div class="embed-responsive embed-responsive-16by9">
+        <iframe width="260" height="145" src="https://www.youtube.com/embed/1FsV0V00LBI?si=YmIkgVsWI3rbwZg1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</div>
+
+ <!-- Contenido sobre microservicios -->
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 mb-4">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h5 class="card-title text-primary mb-3">¿Qué son los microservicios?</h5>
+            <p class="card-text">Los microservicios son una arquitectura de desarrollo de software en la que una aplicación se compone de pequeños servicios independientes, cada uno ejecutando un proceso único y comunicándose entre sí a través de protocolos ligeros.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h5 class="card-title text-success mb-3">Ventajas de los microservicios</h5>
+            <ul class="card-text">
+              <li>Simplifican el desarrollo y la implementación.</li>
+              <li>Facilitan la escalabilidad y la disponibilidad.</li>
+              <li>Permiten la independencia tecnológica y la poliglotía.</li>
+              <li>Mejoran la resistencia y la tolerancia a fallos.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-4">
+        <div class="card bg-light">
+          <div class="card-body">
+            <h5 class="card-title text-danger mb-3">Desafíos de los microservicios</h5>
+            <ul class="card-text">
+              <li>Mayor complejidad en la gestión de múltiples servicios.</li>
+              <li>Requieren una infraestructura de soporte más robusta.</li>
+              <li>Mayor carga de trabajo en la gestión de la comunicación entre servicios.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Comparación con otras arquitecturas -->
+<div class="container mt-5">
+    <h2 class="titulo text-center">Microservicios vs. Arquitectura Monolítica</h2>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <!-- Espacio para imagen -->
+          <img src="/IMGENES/Monolith-vs-Microservices-1024x568.png" alt="Microservicios vs. Arquitectura Monolítica" class="img-fluid img-thumbnail mb-3" style="max-width: 500px;">
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h4 class="mt-4">Microservicios</h4>
+        <p>Los microservicios descomponen una aplicación en servicios pequeños e independientes, lo que facilita la escalabilidad y el desarrollo ágil.</p>
+        <p>Además, los microservicios promueven una mayor flexibilidad en el desarrollo y despliegue de aplicaciones al favorecer la adopción de tecnologías específicas para cada servicio. Esto mejora la capacidad de pruebas y mantenimiento de las aplicaciones.</p>
+      </div>
+      <div class="col-lg-6">
+        <h4 class="mt-4">Arquitectura Monolítica</h4>
+        <p>En la arquitectura monolítica, toda la aplicación se desarrolla, implementa y despliega como una sola unidad, lo que puede generar problemas de escalabilidad y mantenimiento a medida que la aplicación crece.</p>
+        <p>Sin embargo, la arquitectura monolítica ofrece simplicidad en la gestión y despliegue de la aplicación. Al tener menos complejidad en la gestión de la comunicación entre componentes, facilita la implementación inicial de la aplicación.</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+<!-- Ejemplos de empresas que utilizan microservicios -->
+<div class="container mt-5">
+    <h2 class="titulo text-center">Empresas que utilizan Microservicios</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 text-center mb-4">
+        <div class="img-container">
+          <img src="/IMGENES/netflix-logo-netflix-icon-free-free-vector.jpg" class="img-fluid rounded" alt="Empresa 1">
+        </div>
+        <p class="mt-2">NETFLIX</p>
+      </div>
+      <div class="col-lg-4 text-center mb-4">
+        <div class="img-container">
+          <img src="/IMGENES/amazon-logo-on-transparent-background-free-vector.jpg" class="img-fluid rounded" alt="Empresa 2">
+        </div>
+        <p class="mt-2">AMAZON</p>
+      </div>
+      <div class="col-lg-4 text-center mb-4">
+        <div class="img-container">
+          <img src="/IMGENES/mercado-libre.png" class="img-fluid rounded" alt="Empresa 3">
+        </div>
+        <p class="mt-2">MERCADO LIBRE</p>
+      </div>
+    </div>
+  </div>
+  
+  <style>
+    .img-container {
+      width: 200px; /* Ajusta el tamaño de la imagen según lo necesario */
+      margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+  </style>
+  
+<!-- Consejos para implementar microservicios -->
+<div class="container mt-5">
+    <h2 class="titulo text-center">Consejos para Implementar Microservicios</h2>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <h5 class="mb-1">Divide la aplicación en servicios pequeños y cohesivos</h5>
+            <p class="mb-0">La modularidad es clave en la arquitectura de microservicios. Divide la funcionalidad de tu aplicación en servicios independientes, cada uno con una responsabilidad clara y definida.</p>
+          </li>
+          <li class="list-group-item">
+            <h5 class="mb-1">Utiliza tecnologías de contenedores para la implementación</h5>
+            <p class="mb-0">Contenedores como Docker proporcionan un entorno ligero y portátil para ejecutar microservicios de forma consistente en diferentes entornos, mientras que herramientas de orquestación como Kubernetes simplifican la gestión y escalabilidad de los contenedores.</p>
+          </li>
+          <li class="list-group-item">
+            <h5 class="mb-1">Adopta prácticas de desarrollo ágil y DevOps</h5>
+            <p class="mb-0">La implementación de microservicios se beneficia de prácticas ágiles y DevOps que fomentan la colaboración, la integración continua y el despliegue automatizado, lo que acelera el ciclo de desarrollo y mejora la calidad del software.</p>
+          </li>
+          <li class="list-group-item">
+            <h5 class="mb-1">Implementa un monitoreo robusto</h5>
+            <p class="mb-0">El monitoreo continuo de los microservicios es fundamental para detectar y resolver problemas de manera proactiva, garantizando un alto rendimiento, disponibilidad y confiabilidad del sistema en todo momento.</p>
+          </li>
+          <li class="list-group-item">
+            <h5 class="mb-1">Considera los desafíos de seguridad y gestión de datos</h5>
+            <p class="mb-0">La seguridad y la gestión de datos son aspectos críticos en la arquitectura de microservicios. Implementa medidas de seguridad sólidas y ten en cuenta los requisitos de gestión de datos para garantizar la integridad y privacidad de la información.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+</html>

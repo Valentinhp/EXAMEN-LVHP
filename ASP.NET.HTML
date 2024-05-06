@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tecnologías para Desarrollo de Aplicaciones Web en ASP.NET</title>
+  <!-- Agrega el favicon -->
+  <link rel="icon" type="image/png" href="/IMGENES/LOGO.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Personalización adicional */
+    .navbar-brand {
+      color: #007bff;
+      font-size: 28px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+    .nav-link {
+      color: #07386d;
+      font-weight: bold;
+      font-size: 20px; /* Tamaño de fuente reducido */
+      text-decoration: none; /* Quita el subrayado de enlaces */
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #0056b3;
+    }
+    .titulo {
+      color: #0e3b6a;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .logo-container {
+      margin-left: auto;
+    }
+    .logo {
+      max-width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+      transition: all 0.3s ease;
+    }
+    .logo:hover {
+      transform: rotate(360deg);
+    }
+    /* Estilos adicionales */
+    .container {
+      margin-top: 50px;
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe, .video-container object, .video-container embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    h2, h3, h4 {
+      color: #07386d;
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    ul {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">EXAMEN PARCIAL II</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="titulo" href="/ASP.NET.HTML">TECNOLOGÍAS PARA EL DESARROLLO DE APPS WEB EN ASP.NET</a>
+            </li>
+            <!-- Resto de los elementos de la barra de navegación -->
+          </ul>
+          <!-- Contenedor del logo -->
+          <div class="logo-container">
+            <img src="/IMGENES/LOGO.png" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>ASP.NET</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                ASP.NET es un framework de desarrollo web de código abierto creado por Microsoft para construir aplicaciones web modernas y dinámicas. Utiliza el lenguaje de programación C# y se integra bien con Visual Studio, el entorno de desarrollo integrado (IDE) de Microsoft.
+                ASP.NET ofrece una amplia gama de características y funcionalidades, incluyendo el modelo de programación basado en eventos, controles de servidor web, autenticación y autorización, servicios web, y acceso a datos a través de ADO.NET.
+                Además, ASP.NET proporciona opciones de desarrollo flexibles, como Web Forms para crear aplicaciones web basadas en formularios y ASP.NET MVC (Model-View-Controller) para aplicaciones web que siguen el patrón de diseño MVC.
+                Con la introducción de ASP.NET Core, también se ha mejorado la portabilidad y el rendimiento, permitiendo a los desarrolladores crear aplicaciones web que se ejecuten en diferentes plataformas, como Windows, Linux y macOS.
+            </p>
+        </div>
+        <div class="col-md-6">
+            <img src="/IMGENES/asp_net.png" alt="ASP.NET Logo" class="img-fluid">
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h3>Características principales de ASP.NET</h3>
+        <ul>
+          <li><strong>Modelo de programación basado en eventos:</strong> ASP.NET utiliza un modelo de programación basado en eventos que facilita la creación de aplicaciones web interactivas y dinámicas. Los eventos del servidor, como clics de botón o cambios de estado, desencadenan acciones específicas en el servidor, lo que permite una experiencia de usuario más rica.</li>
+          <li><strong>Amplia compatibilidad con lenguajes:</strong> ASP.NET es compatible con varios lenguajes de programación, incluyendo C#, Visual Basic, F# y otros. Esto brinda a los desarrolladores la flexibilidad de elegir el lenguaje que mejor se adapte a sus necesidades y preferencias.</li>
+          <li><strong>Integración con Visual Studio:</strong> ASP.NET se integra estrechamente con Visual Studio, el entorno de desarrollo integrado (IDE) de Microsoft. Esta integración proporciona a los desarrolladores un conjunto completo de herramientas para el desarrollo de aplicaciones web, incluyendo depuración, diseño de interfaces de usuario, administración de bases de datos y más.</li>
+          <li><strong>Soporte para el desarrollo de aplicaciones web, APIs RESTful y servicios:</strong> ASP.NET es versátil y puede utilizarse para desarrollar una variedad de aplicaciones web y servicios, incluyendo sitios web, aplicaciones de una sola página (SPA), APIs RESTful para la comunicación entre sistemas, servicios web SOAP para la interoperabilidad entre plataformas, entre otros.</li>
+        </ul>
+        <h3>Integración con Bootstrap</h3>
+        <p>Bootstrap es un framework front-end popular para el desarrollo de sitios web y aplicaciones web responsivas. Se integra perfectamente con ASP.NET, lo que permite crear interfaces de usuario atractivas y funcionales. Bootstrap proporciona un conjunto de componentes y estilos predefinidos que facilitan el diseño y la construcción de sitios web con un aspecto moderno y adaptable a diferentes dispositivos.</p>
+        <p>Al integrar Bootstrap con ASP.NET, los desarrolladores pueden aprovechar las clases CSS de Bootstrap para crear diseños receptivos, utilizar componentes como botones, formularios, navegación y más, y mejorar la experiencia del usuario con funcionalidades interactivas proporcionadas por JavaScript y jQuery, como modales, pestañas y despliegues deslizables.</p>
+        <h3>Seguridad en ASP.NET</h3>
+<p>La seguridad es un aspecto crítico en el desarrollo de aplicaciones web, y ASP.NET proporciona diversas características y herramientas para garantizar la protección de datos y la prevención de ataques maliciosos.</p>
+<p>Entre las principales características de seguridad en ASP.NET se incluyen:</p>
+<ul>
+  <li><strong>Autenticación y autorización:</strong> ASP.NET ofrece mecanismos robustos para autenticar usuarios y controlar su acceso a recursos protegidos. Puedes implementar autenticación basada en formularios, Windows, o mediante proveedores de identidad como Azure AD.</li>
+  <li><strong>Protección contra ataques de seguridad:</strong> ASP.NET incluye medidas integradas para proteger contra ataques comunes, como inyección SQL, cross-site scripting (XSS), falsificación de solicitudes entre sitios (CSRF) y más. Esto se logra a través de la validación de entrada, el uso de parámetros de consulta parametrizados, y la codificación de salida.</li>
+  <li><strong>Seguridad en la capa de transporte:</strong> ASP.NET permite configurar medidas de seguridad en la capa de transporte, como la habilitación de HTTPS, la configuración de certificados SSL/TLS, y el uso de cifrado para proteger la comunicación entre el servidor y el cliente.</li>
+  <li><strong>Prevención de sesiones falsificadas:</strong> ASP.NET proporciona protección contra ataques de suplantación de sesiones mediante la generación y validación de tokens de sesión, asegurando que cada solicitud provenga de una sesión autenticada y autorizada.</li>
+</ul>
+<p>Además, ASP.NET fomenta las mejores prácticas de seguridad a través de la educación y la documentación, ayudando a los desarrolladores a comprender los riesgos de seguridad y a implementar medidas adecuadas para mitigarlos.</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <h4 class="text-center">VIDEO DE INTRODUCCIÓN A ASP.NET</h4>
+        <div class="video-container">
+          <iframe width="100%" height="360" src="/VIDEOS/Introducción - 1 - Tutorial ASP.NET en español.mp4" title="Video tutorial ASP.NET" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<!-- Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

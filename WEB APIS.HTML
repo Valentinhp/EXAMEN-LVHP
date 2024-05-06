@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Parcial</title>
+  <!-- Agrega el favicon -->
+  <link rel="icon" type="image/png" href="/IMGENES/LOGO.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Personalización adicional */
+    .navbar-brand {
+      color: #007bff;
+      font-size: 28px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+    .nav-link {
+      color: #07386d;
+      font-weight: bold;
+      font-size: 20px; /* Tamaño de fuente reducido */
+      text-decoration: none; /* Quita el subrayado de enlaces */
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #0056b3;
+    }
+    .titulo {
+      color: #0e3b6a;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .logo-container {
+      margin-left: auto;
+    }
+    .logo {
+      max-width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+      transition: all 0.3s ease;
+    }
+    .logo:hover {
+      transform: rotate(360deg);
+    }
+    h2, h3 {
+      color: #07386d;
+      font-weight: bold;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .carousel-inner img {
+      width: 100%;
+    }
+    .table th, .table td {
+      vertical-align: middle;
+    }
+    .table th {
+      color: #0e3b6a;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .table td {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">EXAMEN PARCIAL II</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="titulo" href="/WEB APIS.HTML">TECNOLOGÍAS DE WEB API's</a>
+            </li>
+            <!-- Resto de los elementos de la barra de navegación -->
+          </ul>
+          <!-- Contenedor del logo -->
+          <div class="logo-container">
+            <img src="/IMGENES/LOGO.png" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="mb-4">¿Qué son las Web APIs?</h2>
+        <p>Las Web APIs, o Interfaz de Programación de Aplicaciones Web, son conjuntos de reglas y protocolos que permiten que diferentes aplicaciones se comuniquen entre sí a través de internet. Funcionan como puntos de acceso que facilitan el intercambio de datos y la ejecución de acciones entre distintos sistemas, lo que posibilita la integración y la creación de servicios más complejos y funcionales en la web.</p>
+        <!-- Agregar carrusel con ejemplos de Web APIs -->
+        <div id="carouselExamples" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/IMGENES/web api gif.gif" class="d-block w-100" alt="Example 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/IMGENES/gif2.gif" class="d-block w-100" alt="Example 2">
+            </div>
+            <div class="carousel-item">
+              <img src="/IMGENES/gif3.gif" class="d-block w-100" alt="Example 3">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExamples" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExamples" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2 class="mb-4">Ejemplos de Web APIs</h2>
+        <!-- Agregar imagen -->
+        <p>Ejemplos de Web APIs incluyen las ofrecidas por Google, Facebook, Twitter y Amazon, que permiten a los desarrolladores integrar funciones específicas de estas plataformas en sus propias aplicaciones web.</p>
+        <img src="/IMGENES/Tipos-de-API-ES.png" class="img-fluid" alt="Web APIs">
+      </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-6">
+          <!-- Título -->
+          <h2 class="mb-4">Beneficios de utilizar Web APIs</h2>
+          <!-- Lista de beneficios con estilo de tabla -->
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Beneficio</th>
+                  <th>Explicación</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Integración fácil</td>
+                  <td>Permite la integración rápida de funcionalidades externas en una aplicación, lo que acelera el desarrollo y reduce el esfuerzo de programación.</td>
+                </tr>
+                <tr>
+                  <td>Acceso a datos externos</td>
+                  <td>Facilita el acceso a datos y servicios ofrecidos por otras aplicaciones o plataformas, ampliando así la funcionalidad de la aplicación.</td>
+                </tr>
+                <tr>
+                  <td>Escalabilidad</td>
+                  <td>Al permitir la integración de múltiples servicios, las Web APIs facilitan la escalabilidad de una aplicación, ya que pueden adaptarse a diferentes volúmenes de usuarios y necesidades.</td>
+                </tr>
+                <tr>
+                  <td>Mejora la experiencia del usuario</td>
+                  <td>Al ofrecer acceso a una amplia gama de funcionalidades y datos externos, las Web APIs enriquecen la experiencia del usuario al proporcionar servicios más completos y personalizados.</td>
+                </tr>
+                <tr>
+                  <td>Innovación</td>
+                  <td>Las Web APIs fomentan la innovación al permitir la combinación de diferentes servicios y datos, lo que puede conducir al desarrollo de nuevas ideas y soluciones creativas.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-4">¿Cómo utilizar Web APIs?</h2>
+          <p>Para comenzar a utilizar Web APIs, primero necesitas entender qué son y para qué se utilizan. Una vez que tengas una idea clara, identifica una API que se ajuste a tus necesidades. Investiga cómo autenticarte y realizar solicitudes a esa API a través de la documentación proporcionada por el proveedor. Aprende sobre los diferentes tipos de solicitudes que puedes hacer y cómo interpretar las respuestas que recibes. Prueba pequeños ejemplos de código para familiarizarte con el proceso de integración de la API en tu aplicación. Con el tiempo y la práctica, te sentirás más cómodo utilizando diversas Web APIs para mejorar tus proyectos.</p>
+          <!-- Agregar imagen -->
+          <img src="/IMGENES/como usar.jpg" class="img-fluid" alt="How to use Web APIs">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (jQuery, Popper.js, Bootstrap JS) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

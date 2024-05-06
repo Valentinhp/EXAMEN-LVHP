@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Parcial</title>
+  <!-- Agregar favicon -->
+  <link rel="icon" type="image/png" href="/IMGENES/LOGO.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS (Librería para animaciones) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    /* Personalización adicional */
+    body {
+      font-family: Arial, sans-serif; /* Cambiar la fuente de texto */
+    }
+    .nav-item {
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .nav-link {
+      color: #333;
+      font-weight: bold;
+      font-size: 13px; /* Tamaño de fuente reducido */
+      text-decoration: none; /* Quita el subrayado de enlaces */
+      transition: all 0.3s ease;
+    }
+    .nav-item:hover .nav-link {
+      color: #007bff;
+    }
+    .nav-link.animated:hover {
+      animation-duration: 0.5s;
+      animation-name: bounceIn; /* Nombre de la animación de Bootstrap */
+    }
+    .navbar {
+      background-color: #f8f9fa;
+    }
+    .navbar-brand {
+      color: #007bff;
+      font-size: 24px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+    .navbar-nav {
+      margin-left: auto;
+    }
+    /* Estilos para el logo */
+    .logo-container {
+      margin-left: auto;
+    }
+    .logo {
+      max-width: 40px; /* Ajusta el tamaño del logo según sea necesario */
+      transition: all 0.3s ease;
+    }
+    .logo:hover {
+      transform: rotate(360deg);
+    }
+    /* Estilos para la imagen grande */
+    .jumbotron {
+      background-size: cover; /* Hace que la imagen se ajuste al contenedor sin distorsionarse */
+      background-position: center;
+      color: white;
+      padding: 100px 0; /* Espacio alrededor del texto */
+      margin-bottom: 0; /* Elimina el espacio inferior */
+      height: 100vh; /* Hace que la jumbotron ocupe toda la altura de la ventana */
+      position: relative; /* Posición relativa para que los elementos absolutos se coloquen correctamente */
+    }
+    .jumbotron .container {
+      position: relative; /* Posición relativa para que los elementos absolutos se coloquen correctamente */
+      z-index: 1; /* Asegura que el contenido esté sobre la imagen de fondo */
+    }
+    .jumbotron::before {
+      content: "";
+      background: rgba(0, 0, 0, 0.3); /* Fondo semitransparente con opacidad reducida */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    .jumbotron h1, .jumbotron p {
+      position: relative; /* Para que los textos estén sobre el fondo semitransparente */
+      z-index: 1;
+      color: white; /* Color blanco para mejorar el contraste */
+      font-weight: bold; /* Texto en negrita */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra al texto */
+      padding: 5px; /* Añadir relleno alrededor del texto */
+      background-color: rgba(0, 0, 0, 0.23); /* Fondo semitransparente */
+      border-radius: 10px; /* Bordes redondeados */
+      text-decoration: none; /* Quita el subrayado del texto */
+      display: inline-block; /* Hace que el contenedor de texto se ajuste al texto */
+      margin-bottom: 30px; /* Espacio entre los recuadros de texto */
+    }
+    /* Efecto de sombra en la barra de navegación */
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .navbar:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    /* Efecto de sombra en los elementos de navegación */
+    .nav-link {
+      transition: box-shadow 0.3s ease;
+    }
+    .nav-link:hover {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .card {
+      background-color: #d2d2d2; /* Color gris más oscuro */
+      border: 3px solid rgba(49, 96, 146, 0.5); /* Borde azul con opacidad */
+      border-radius: 10px; /* Añade bordes redondeados */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Agrega una ligera sombra */
+    }
+
+    .card-img-top {
+      height: 200px; /* Altura fija para todas las imágenes de las tarjetas */
+      object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">EXAMEN PARCIAL II</a>
+        <!-- Botón de alternar para dispositivos pequeños -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <!-- Elementos de navegación -->
+            <li class="nav-item animated">
+              <a class="nav-link" href="/WEB APIS.HTML">WEB APIS</a>
+            </li>
+            <li class="nav-item animated">
+              <a class="nav-link" href="/MICROSERVICIOS.HTML">MICROSERVICIOS</a>
+            </li>
+            <li class="nav-item animated">
+              <a class="nav-link" href="/DESAROLLO WEB API.HTML">DESARROLLO WEB API</a>
+            </li>
+            <li class="nav-item animated">
+              <a class="nav-link" href="/MANEJO DE CONTENEDORES.HTML">CONTENEDORES</a>
+            </li>
+            <li class="nav-item animated">
+              <a class="nav-link" href="/APPS NUBE.HTML">APLICACIONES EN LA NUBE</a>
+            </li>
+            <li class="nav-item animated">
+              <a class="nav-link" href="/ASP.NET.HTML">ASP.NET</a>
+            </li>
+          </ul>
+          <!-- Contenedor del logo -->
+          <div class="logo-container">
+            <img src="/IMGENES/LOGO.png" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Imagen grande con texto -->
+    <div class="jumbotron jumbotron-fluid text-center" style="background-image: url('/IMGENES/web-development-desk-Flatdesign-1387793-wallhere.com.jpg');" data-aos="fade-up">
+      <div class="container">
+        <h1 class="display-4">¡Bienvenido al Examen Parcial II!</h1>
+        <p class="lead">
+          <span style="padding: 10px; border-radius: 10px;">Esta página te invita a explorar los fundamentos esenciales del desarrollo web. Aquí encontrarás una variedad de temas emocionantes, desde las Web APIs y los microservicios hasta el desarrollo en la nube y las tecnologías de ASP.NET. Nuestro objetivo es ofrecerte un recurso educativo completo donde puedas sumergirte en estos temas y ampliar tus conocimientos en el mundo del desarrollo web. Prepárate para descubrir nuevos horizontes y avanzar en tu comprensión de estos fascinantes conceptos.</span>
+        </p>
+      </div>
+    </div>
+  </header>
+
+<!-- Sección de tarjetas -->
+<section class="container mt-5">
+  <div class="row">
+    <!-- Tarjeta 1: Microservicios -->
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card">
+        <img src="/IMGENES/microservices-transformed.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Microservicios</h5>
+          <p class="card-text">Los microservicios son una arquitectura de desarrollo de software que estructura las aplicaciones como una colección de servicios débilmente acoplados y altamente cohesivos. Cada microservicio se centra en realizar una tarea específica y se puede desarrollar, implementar y escalar de forma independiente.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Tarjeta 2: Web APIs -->
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card">
+        <img src="/IMGENES/7090333.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Web APIs</h5>
+          <p class="card-text">Las Web APIs (Interfaces de Programación de Aplicaciones Web) permiten la comunicación entre diferentes aplicaciones de software a través de Internet. Proporcionan un conjunto de funciones y procedimientos que otras aplicaciones pueden utilizar para solicitar y manipular datos.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Tarjeta 3: Desarrollo en la Nube -->
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card">
+        <img src="/IMGENES/cloud-computing-connect-to-internet-vector.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Desarrollo en la Nube</h5>
+          <p class="card-text">El desarrollo en la nube se refiere al proceso de desarrollo, implementación y administración de aplicaciones a través de servicios en la nube. Permite a los desarrolladores crear y ejecutar aplicaciones sin la necesidad de poseer hardware o infraestructura física.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Tarjeta 4: Contenedores -->
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card">
+        <img src="/IMGENES/CONTENEDORES 2.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Contenedores</h5>
+          <p class="card-text">Los contenedores son una tecnología de virtualización que permite empaquetar y ejecutar aplicaciones y sus dependencias de forma aislada. Ofrecen una forma consistente de implementar, distribuir y administrar aplicaciones en diferentes entornos.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Tarjeta 5: Apps en la Nube -->
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card">
+        <img src="/IMGENES/NUBE2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Apps en la Nube</h5>
+          <p class="card-text">Las aplicaciones en la nube son programas informáticos que se ejecutan en servidores remotos accesibles a través de Internet. Permiten a los usuarios acceder y utilizar servicios y datos de manera flexible desde cualquier lugar con conexión a la red.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Tarjeta 6: ASP.NET -->
+    <div class="col-md-4 mb-4" data-aos="fade-up">
+      <div class="card">
+        <img src="/IMGENES/asp1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ASP.NET</h5>
+          <p class="card-text">ASP.NET es un marco de trabajo de código abierto para la construcción de aplicaciones web y servicios HTTP en .NET. Proporciona una arquitectura flexible y potente para desarrollar sitios web modernos, aplicaciones empresariales y servicios web.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Pie de página -->
+<footer class="footer mt-auto py-3">
+  <div class="container text-center">
+    <span class="text-muted">© 2024 Examen Parcial II</span>
+  </div>
+</footer>
+
+<!-- Bootstrap JS y dependencias -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- AOS JS (Librería para animaciones) -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      once: true // Esta opción hace que la animación solo se ejecute una vez
+    });
+  });
+</script>
+</body>
+</html>

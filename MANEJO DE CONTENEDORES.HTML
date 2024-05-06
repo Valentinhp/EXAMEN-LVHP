@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examen Parcial</title>
+  <!-- Agrega el favicon -->
+  <link rel="icon" type="image/png" href="/IMGENES/LOGO.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Personalización adicional */
+    .navbar-brand {
+      color: #007bff;
+      font-size: 28px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand:hover {
+      color: #0056b3;
+    }
+    .nav-link {
+      color: #07386d;
+      font-weight: bold;
+      font-size: 20px; /* Tamaño de fuente reducido */
+      text-decoration: none; /* Quita el subrayado de enlaces */
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #0056b3;
+    }
+    .titulo {
+      color: #0e3b6a;
+      font-size: 32px;
+      font-weight: bold;
+    }
+    .logo-container {
+      margin-left: auto;
+    }
+    .logo {
+      max-width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+      transition: all 0.3s ease;
+    }
+    .logo:hover {
+      transform: rotate(360deg);
+    }
+    h2, h3 {
+      color: #07386d;
+      font-weight: bold;
+    }
+    h3 {
+      font-size: 24px;
+      margin-top: 30px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    ul, ol {
+      font-size: 18px;
+    }
+    table {
+      margin-top: 20px;
+    }
+    th {
+      color: #0e3b6a;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    td {
+      font-size: 18px;
+    }
+    .embed-responsive {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">EXAMEN PARCIAL II</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="titulo" href="/MANEJO DE CONTENEDORES.HTML">MANEJO DE CONTENEDORES</a>
+            </li>
+            <!-- Resto de los elementos de la barra de navegación -->
+          </ul>
+          <!-- Contenedor del logo -->
+          <div class="logo-container">
+            <img src="/IMGENES/LOGO.png" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mt-5" id="contenedores">
+    <img src="/IMGENES/CONTENEDORES.jpg" class="img-fluid mx-auto d-block mb-4" alt="Imagen de Web API" style="max-width: 350px;">
+    <h2>Manejo de Contenedores</h2>
+    <p>Los contenedores son una tecnología de virtualización que permite empaquetar y distribuir aplicaciones junto con todas sus dependencias, de forma que puedan ejecutarse de manera rápida y confiable en cualquier entorno. Esto es especialmente útil en entornos de desarrollo y despliegue de software.</p>
+
+    <p>La tecnología de contenedores se basa en la virtualización a nivel de sistema operativo. Cada contenedor constituye una instancia aislada de un sistema operativo subyacente compartido, lo que permite la ejecución de aplicaciones y servicios de forma independiente y sin interferencias entre sí.</p>
+
+    <p>Los contenedores proporcionan un entorno de ejecución consistente y reproducible para las aplicaciones, lo que facilita su desarrollo, prueba y despliegue en diferentes entornos, desde estaciones de trabajo de desarrollo hasta servidores de producción.</p>
+
+    <p>Además de su portabilidad y eficiencia, los contenedores ofrecen ventajas en términos de seguridad y gestión. Los contenedores pueden implementarse de manera segura y controlada, con políticas de acceso y aislamiento que limitan el impacto de posibles vulnerabilidades o fallos en una aplicación.</p>
+
+    <h3>Beneficios de los Contenedores</h3>
+    <p>Los contenedores ofrecen una serie de beneficios significativos para el desarrollo y la gestión de aplicaciones:</p>
+    <ul>
+      <li><strong>Portabilidad:</strong> Las aplicaciones y sus dependencias están encapsuladas en contenedores, lo que facilita su movimiento entre diferentes entornos, desde el desarrollo hasta la producción. Esto significa que una vez que una aplicación está empaquetada en un contenedor, puede ejecutarse en cualquier entorno que admita contenedores sin necesidad de modificaciones.</li>
+      <li><strong>Consistencia:</strong> Garantizan que la aplicación se ejecute de la misma manera en cualquier entorno, eliminando problemas de "funciona en mi máquina" y asegurando una experiencia coherente para los usuarios finales. Esto se debe a que los contenedores incluyen todas las dependencias necesarias para ejecutar la aplicación, desde bibliotecas hasta configuraciones, lo que evita problemas de incompatibilidad entre entornos.</li>
+      <li><strong>Eficiencia:</strong> Los contenedores comparten el sistema operativo subyacente y utilizan recursos de manera más eficiente que las máquinas virtuales tradicionales, lo que permite un mayor rendimiento y una utilización más completa de los recursos de hardware. Debido a su arquitectura ligera, los contenedores pueden iniciarse rápidamente y ocupar menos espacio en disco en comparación con las máquinas virtuales, lo que los hace ideales para implementaciones a escala.</li>
+      <li><strong>Escala:</strong> Los contenedores son altamente escalables y pueden desplegarse y gestionarse de manera automatizada, lo que facilita la implementación y el escalado de aplicaciones en entornos de nube y de infraestructura moderna. Con herramientas como Kubernetes, es posible gestionar clústeres de contenedores a gran escala, automatizando tareas como el despliegue, el escalado y la recuperación de fallos, lo que permite una gestión eficiente de las aplicaciones distribuidas.</li>
+    </ul>
+
+    <h3>Herramientas de Contenedores</h3>
+    <p>Existen diversas herramientas para trabajar con contenedores, cada una con sus propias características y ventajas:</p>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Herramienta</th>
+          <th>Descripción</th>
+          <th>Uso Principal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Docker</strong></td>
+          <td>Plataforma líder en la creación, distribución y ejecución de aplicaciones en contenedores. Docker proporciona una interfaz intuitiva y potente para trabajar con contenedores y es ampliamente adoptada en la industria. Permite a los desarrolladores empaquetar aplicaciones y sus dependencias en contenedores, lo que facilita el desarrollo, la prueba y el despliegue de aplicaciones en cualquier entorno.</td>
+          <td>Desarrollo y Despliegue de Aplicaciones</td>
+        </tr>
+        <tr>
+          <td><strong>Kubernetes</strong></td>
+          <td>Orquestador de contenedores que automatiza la implementación, escalado y gestión de aplicaciones en contenedores. Kubernetes permite gestionar clústeres de contenedores a escala y proporciona funcionalidades avanzadas para la gestión de aplicaciones distribuidas. Facilita la administración de aplicaciones en entornos de producción y permite escalarlas dinámicamente según la demanda del usuario.</td>
+          <td>Orquestación y Gestión de Contenedores</td>
+        </tr>
+        <tr>
+          <td><strong>Podman</strong></td>
+          <td>Herramienta alternativa a Docker que permite ejecutar y gestionar contenedores sin requerir un demonio en ejecución. Podman es parte del ecosistema de herramientas de contenedores de Red Hat y se centra en la seguridad y la compatibilidad con estándares abiertos. Ofrece una interfaz de línea de comandos similar a Docker pero se ejecuta como un proceso individual, lo que lo hace adecuado para entornos donde Docker no está disponible o no es deseable.</td>
+          <td>Administración de Contenedores</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Video Para tener mas conocimiento acerca de los contenedores</h3>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/k6T2Lokkx6o?si=CTQmoY6hJehSy_aM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <h3>Recursos Adicionales</h3>
+    <p>Si deseas aprender más sobre el manejo de contenedores, aquí tienes algunos recursos útiles:</p>
+    <ul>
+      <li><a href="https://www.w3schools.com/w3css/w3css_containers.asp">w3schools</a>: Documentación oficial, guías y tutoriales de Contenedores.</li>
+    </ul>
+  </div>
+
+  <!-- Bootstrap JS y jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo de una Web API</title>
+  <!-- Agrega el favicon -->
+  <link rel="icon" type="image/png" href="/IMGENES/LOGO.png">
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Personalización adicional */
+    body {
+      background-color: #f8f9fa; /* Color de fondo */
+      color: #333; /* Color del texto */
+    }
+    .navbar-brand {
+      color: #007bff;
+      font-size: 24px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .navbar-brand:hover {
+      color: #07386d;
+    }
+    .nav-link {
+      color: #07386d;
+      font-weight: bold;
+      font-size: 18px; /* Tamaño de fuente reducido */
+      text-decoration: none; /* Quita el subrayado de enlaces */
+      transition: all 0.3s ease;
+    }
+    .nav-link:hover {
+      color: #07386d;
+    }
+    .titulo {
+      color: #0e3b6a;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .logo-container {
+      margin-left: auto;
+    }
+    .logo {
+      max-width: 40px; /* Ajusta el tamaño del logo según sea necesario */
+      transition: all 0.3s ease;
+    }
+    .logo:hover {
+      transform: rotate(360deg);
+    }
+    .section {
+      background-color: #fff; /* Color de fondo */
+      padding: 40px; /* Espaciado interno */
+      border-radius: 10px; /* Bordes redondeados */
+      margin-top: 30px; /* Espacio superior */
+      box-shadow: 0 0 20px rgba(0,0,0,0.1); /* Sombra */
+    }
+    .feature-icon {
+      font-size: 36px; /* Tamaño de ícono */
+      color: #07386d; /* Color del ícono */
+    }
+    .feature-title {
+      color: #07386d;
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .feature-description {
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">EXAMEN PARCIAL II</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="titulo" href="/DESAROLLO WEB API.HTML">DESARROLLO DE UNA WEB API</a>
+            </li>
+            <!-- Resto de los elementos de la barra de navegación -->
+          </ul>
+          <!-- Contenedor del logo -->
+          <div class="logo-container">
+            <img src="/IMGENES/LOGO.png" alt="Logo" class="logo">
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="section">
+        <img src="/IMGENES/image-46.webp" class="img-fluid mx-auto d-block mb-4" alt="Imagen de Web API" style="max-width: 350px;">
+      <h1 class="titulo">Desarrollo de una Web API</h1>
+      <p>Una Web API (Interfaz de Programación de Aplicaciones Web) es un conjunto de reglas y protocolos que permite a diferentes sistemas de software comunicarse entre sí a través de internet. Aquí hay algunos conceptos básicos sobre cómo desarrollar una Web API:</p>
+      <ul>
+        <li><strong>Definir los objetivos:</strong> Antes de comenzar a desarrollar la API, es fundamental definir claramente cuál es su propósito y qué funcionalidades debe proporcionar.</li>
+        <li><strong>Diseñar la API:</strong> Esto implica determinar los endpoints (puntos finales), los métodos HTTP que se pueden utilizar (GET, POST, PUT, DELETE), los parámetros que acepta cada endpoint y la estructura de los datos de entrada y salida.</li>
+        <li><strong>Implementar la API:</strong> Utilizando un lenguaje de programación y un framework adecuados, como Node.js con Express, se implementa la lógica de la API según el diseño establecido.</li>
+        <li><strong>Probar la API:</strong> Es crucial realizar pruebas exhaustivas para garantizar que la API funcione correctamente en diferentes escenarios y con distintos tipos de datos.</li>
+        <li><strong>Documentar la API:</strong> Se debe crear una documentación clara y completa que explique cómo utilizar la API, incluyendo ejemplos de solicitudes y respuestas.</li>
+        <li><strong>Desplegar la API:</strong> Finalmente, la API se despliega en un servidor para que esté disponible para su uso por parte de otras aplicaciones.</li>
+      </ul>
+      <p>Desarrollar una Web API puede ser un proceso complejo, pero siguiendo estos conceptos básicos y utilizando las herramientas adecuadas, se puede crear una API potente y fácil de usar que satisfaga las necesidades de los usuarios.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="titulo">Beneficios de una Web API</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <i class="fas fa-cogs feature-icon"></i>
+              <h5 class="card-title feature-title">Interoperabilidad</h5>
+              <p class="card-text feature-description">Permite que diferentes sistemas y plataformas se comuniquen entre sí de manera efectiva.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <i class="fas fa-expand feature-icon"></i>
+              <h5 class="card-title feature-title">Escalabilidad</h5>
+              <p class="card-text feature-description">Facilita el manejo de grandes volúmenes de datos y el crecimiento de la aplicación sin problemas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <i class="fas fa-cog feature-icon"></i>
+              <h5 class="card-title feature-title">Flexibilidad</h5>
+              <p class="card-text feature-description">Permite adaptarse fácilmente a cambios en los requisitos de la aplicación y agregar nuevas funcionalidades.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mb-3">
+            <div class="card-body">
+              <i class="fas fa-lock feature-icon"></i>
+              <h5 class="card-title feature-title">Seguridad</h5>
+              <p class="card-text feature-description">Proporciona mecanismos para proteger los datos y controlar el acceso a la información sensible.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+        <h2 class="titulo">Recursos Adicionales</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Documentación de APIs</h5>
+                <p class="card-text">Consulta la documentación oficial para aprender más sobre el desarrollo de Web APIs.</p>
+                <a href="https://www.q2bstudio.com/nuestro-blog/216/documentacion-efectiva-api" class="btn btn-primary">Ir a la Documentación</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Ejemplos de Código</h5>
+                <p class="card-text">Explora ejemplos de código y proyectos para inspirarte en tu desarrollo de Web APIs.</p>
+                <a href="https://es.apis.support.brightcove.com/general/platform-api-code-samples.html" class="btn btn-primary">Ver Ejemplos</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <h5 class="card-title">Video sobre las APIs</h5>
+                <p class="card-text">Ve videos y llena más de información sobre el desarrollo de las Web APIs.</p>
+                <a href="https://www.youtube.com/watch?v=Nw07gG6lf54" class="btn btn-primary">Ver Ahora</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="section">
+      <h2 class="titulo">Implementación en Práctica</h2>
+      <p>Para implementar una Web API, es esencial comprender cómo funcionan los distintos métodos HTTP y cómo se pueden utilizar para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en la base de datos. Aquí hay un ejemplo básico de una API que gestiona una lista de usuarios:</p>
+      <pre><code>
+// Definición de la API con Express.js
+const express = require('express');
+const app = express();
+
+// Lista de usuarios (simulada)
+let users = [
+  { id: 1, name: 'Usuario 1' },
+  { id: 2, name: 'Usuario 2' },
+  { id: 3, name: 'Usuario 3' }
+];
+
+// Endpoint para obtener todos los usuarios
+app.get('/api/users', (req, res) => {
+  res.json(users);
+});
+
+// Endpoint para obtener un usuario por ID
+app.get('/api/users/:id', (req, res) => {
+  const user = users.find(u => u.id === parseInt(req.params.id));
+  if (!user) return res.status(404).send('El usuario no fue encontrado.');
+  res.json(user);
+});
+
+// Otros endpoints para crear, actualizar y eliminar usuarios...
+
+// Puerto de escucha
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Servidor API en ejecución en el puerto ${port}`));
+      </code></pre>
+    </div>
+  </div>
+  
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

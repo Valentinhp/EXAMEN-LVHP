@@ -1,0 +1,238 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMzfx/pk4gwlGB5JF42bDmb",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Valentinhp/EXAMEN-LVHP/blob/main/Liz%202%20git\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "limpiar datos"
+      ],
+      "metadata": {
+        "id": "kkkWwIxirWCe"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "import numpy as np"
+      ],
+      "metadata": {
+        "id": "sdqNcpQxqIsi"
+      },
+      "execution_count": 6,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sfSqsAIDooEL",
+        "outputId": "496ed82d-2766-4345-b073-224cd83bb346"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "     A    B  C    D\n",
+            "0  1.0  5.0  a  foo\n",
+            "1  2.0  6.0  b  bar\n",
+            "2  NaN  7.0  c  foo\n",
+            "3  4.0  NaN  d  bar\n",
+            "4  5.0  9.0  e  foo\n"
+          ]
+        }
+      ],
+      "source": [
+        "\n",
+        "\n",
+        "df = pd.DataFrame({\n",
+        "\t'A': [1, 2, np.nan, 4, 5],\n",
+        "\t'B': [5, 6, 7, np.nan, 9],\n",
+        "\t'C': ['a', 'b', 'c', 'd', 'e'],\n",
+        "\t'D': ['foo', 'bar', 'foo', 'bar', 'foo']\n",
+        "})\n",
+        "\n",
+        "print(df)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_clean = df.dropna()\n",
+        "print(\"\\nDataFRame sin filas nulas\")\n",
+        "print(df_clean)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JEXWe0k7pmz2",
+        "outputId": "9dad79ca-2197-4c3f-8e15-b26edd161985"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "DataFRame sin filas nulas\n",
+            "     A    B  C    D\n",
+            "0  1.0  5.0  a  foo\n",
+            "1  2.0  6.0  b  bar\n",
+            "4  5.0  9.0  e  foo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "RELLENAR VALORES NULOS"
+      ],
+      "metadata": {
+        "id": "A0J5VjB7rO3V"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_filled = df.fillna(value={'A': df['A'].mean(), 'B':df['B'].median()})\n",
+        "print(\"\\nDataFrame con valores nulos rellenados\")\n",
+        "print(df_filled)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Vh5x_cADrZ21",
+        "outputId": "cb09410f-cf1e-4fd7-8f19-aae0c9767520"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "DataFrame con valores nulos rellenados\n",
+            "     A    B  C    D\n",
+            "0  1.0  5.0  a  foo\n",
+            "1  2.0  6.0  b  bar\n",
+            "2  3.0  7.0  c  foo\n",
+            "3  4.0  6.5  d  bar\n",
+            "4  5.0  9.0  e  foo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "ELIMINAR DUPLICADOS"
+      ],
+      "metadata": {
+        "id": "mS-CU52ssTnJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_no_duplicates = df.drop_duplicates(subset='D')\n",
+        "print(\"\\nDataFrame sin duplicadosn en la columna D:\")\n",
+        "print(df_no_duplicates)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XZ98QSS1sV7r",
+        "outputId": "68520519-ab7a-4d08-aef0-c0d45560df54"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "DataFrame sin duplicadosn en la columna D:\n",
+            "     A    B  C    D\n",
+            "0  1.0  5.0  a  foo\n",
+            "1  2.0  6.0  b  bar\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "RENOMBRAR COLUMNAS"
+      ],
+      "metadata": {
+        "id": "BggqANkUup-s"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df_renamed = df.rename(columns={'A': 'Alpha', 'B': 'Beta', 'C':'Charlie', 'D':'Delta'})\n",
+        "print(\"\\nDataFrame con columnas renombradas:\")\n",
+        "print(df_renamed)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-kssAyGYusfM",
+        "outputId": "d54aa931-e57c-4825-e1cc-eba7de983a09"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "DataFrame con columnas renombradas:\n",
+            "   Alpha  Beta Charlie Delta\n",
+            "0    1.0   5.0       a   foo\n",
+            "1    2.0   6.0       b   bar\n",
+            "2    NaN   7.0       c   foo\n",
+            "3    4.0   NaN       d   bar\n",
+            "4    5.0   9.0       e   foo\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
